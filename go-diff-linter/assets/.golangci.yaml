@@ -1,0 +1,40 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    # Essential
+    - govet
+    - staticcheck
+    - errcheck
+    - ineffassign
+    - unused
+
+    # Security
+    - gosec
+
+    # Bug prevention
+    - bodyclose
+    - nilerr
+    - sqlclosecheck
+    - contextcheck
+    - rowserrcheck
+
+    # Code quality
+    - gocritic
+    - revive
+    - misspell
+    - errorlint
+    - dupl
+    - goconst
+    - cyclop
+
+formatters:
+  enable:
+    - gofmt
+    - gofumpt
+    - goimports
+    
+  settings:
+    gofumpt:
+      extra-rules: true
