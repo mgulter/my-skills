@@ -16,7 +16,3 @@ To use these skills in your project, copy the desired skill folder to your proje
 # Example: Install go-diff-linter
 cp -r go-diff-linter /path/to/your/project/.claude/skills/
 ```
-
-## License
-
-MIT
